@@ -1,6 +1,10 @@
 const fs = require('fs');
-
 const color = require('colors');
+const express = require('express');
+
+const app = express();
+
+
 
 let listaCursos = [];
 
@@ -61,11 +65,12 @@ const inscribirCurso = (id, nombre, cedula) => {
     se ha matriculado exitosamente en el curso ${curso.nombre} con una 
     duración de ${curso.duracion} y un valor de ${curso.valor}`;
 
-    fs.writeFile(`${cedula}.txt`, texto, (err) => {
-        if (err) throw (err);
-        console.log(`Se ha creado el archivo exitosamente`);
+    app.get('/', function(req, res) {
+        res.send(texto);
+    })
 
-    });
+    app.listen(8084)
+
     console.log('===== Matriculas educación continua TDEA====='.green);
     console.log(`Nombre Estudiante: ${nombre}`);
     console.log(`ID Estudiante: ${cedula}`);

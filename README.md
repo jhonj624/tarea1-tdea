@@ -4,8 +4,11 @@
 
 ## Instalación de librerias
 
-npm i yargs
-npm i colors
+npm install
+
+## Tener presente el puerto en el momento de abrir el servidor web
+
+localhos:8084
 
 ## Ejecución del programa
 
