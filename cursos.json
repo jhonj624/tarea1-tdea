@@ -1,0 +1,29 @@
+[{
+        "id": 1,
+        "nombre": "Curso JAVA",
+        "descripcion": "... En construcción",
+        "duracion": 48,
+        "valor": 500000
+    },
+    {
+        "id": 2,
+        "nombre": "Diseno de Base de Datos",
+        "descripcion": "... En construcción",
+        "duracion": 32,
+        "valor": 350000
+    }, {
+        "id": 3,
+        "nombre": "Introduccion a la algoritmia",
+        "descripcion": "... En construcción",
+        "duracion": 20,
+        "valor": 0
+    },
+    {
+        "id": 4,
+        "nombre": "Historia de Colombia",
+        "descripcion": "... En construcción",
+        "duracion": 32,
+        "valor": 300000
+    }
+
+]
